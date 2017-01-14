@@ -49566,7 +49566,8 @@
 	    _reactRouter.Route,
 	    { path: "/", component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: "HW0108", component: _HW2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: "HW0108", component: _HW2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "*", component: _NotFound2.default })
 	  )
 	);
 
@@ -66270,7 +66271,7 @@
 	        _react2.default.createElement(
 	          "h4",
 	          null,
-	          "\u627E\u4E0D\u5230\u5566\u5566\u5566"
+	          "\u627E\u4E0D\u5230\u5566\u5566\u5566!!!!?????"
 	        )
 	      );
 	    }
