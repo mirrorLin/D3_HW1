@@ -49546,9 +49546,13 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _NotFound = __webpack_require__(792);
+	var _NotFound = __webpack_require__(794);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
+
+	var _HW = __webpack_require__(795);
+
+	var _HW2 = _interopRequireDefault(_HW);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -49562,6 +49566,7 @@
 	    _reactRouter.Route,
 	    { path: "/", component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "HW0108", component: _HW2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "*", component: _NotFound2.default })
 	  )
 	);
@@ -49623,7 +49628,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "container" },
+	        { className: "container app" },
 	        this.props.children
 	      );
 	    }
@@ -49675,6 +49680,14 @@
 
 	var d3 = _interopRequireWildcard(_d);
 
+	var _reactRouter = __webpack_require__(506);
+
+	var _Header = __webpack_require__(792);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	__webpack_require__(788);
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -49705,10 +49718,16 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "page-home" },
+	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(
 	          "h1",
 	          null,
-	          "This is root"
+	          "This is ROOT"
+	        ),
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/HW0108" },
+	          "0108\u4F5C\u696D"
 	        )
 	      );
 	    }
@@ -66139,6 +66158,81 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(299);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(793);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Header = function (_React$Component) {
+	    _inherits(Header, _React$Component);
+
+	    function Header() {
+	        _classCallCheck(this, Header);
+
+	        return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+	    }
+
+	    _createClass(Header, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "nav",
+	                null,
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "navbar" },
+	                    _react2.default.createElement("span", null)
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Header;
+	}(_react2.default.Component);
+
+	var _default = Header;
+	exports.default = _default;
+	;
+
+	var _temp = function () {
+	    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	        return;
+	    }
+
+	    __REACT_HOT_LOADER__.register(Header, "Header", "/Users/vikamirror/Documents/D3JS.js/src/components/Header.js");
+
+	    __REACT_HOT_LOADER__.register(_default, "default", "/Users/vikamirror/Documents/D3JS.js/src/components/Header.js");
+	}();
+
+	;
+
+/***/ },
+/* 793 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 794 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 
@@ -66201,6 +66295,766 @@
 	}();
 
 	;
+
+/***/ },
+/* 795 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(299);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(506);
+
+	var _wowjs = __webpack_require__(796);
+
+	var _wowjs2 = _interopRequireDefault(_wowjs);
+
+	__webpack_require__(797);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var tableList = [{
+	    cityName: "台北市",
+	    title: "市長",
+	    name: "柯文哲",
+	    office: "臺北市信義區西村里市府路1號"
+	}, {
+	    cityName: "高雄市",
+	    title: "市長",
+	    name: "陳菊",
+	    office: "高雄市苓雅區晴朗里四維3路2號"
+	}, {
+	    cityName: "新北市",
+	    title: "市長",
+	    name: "朱立倫",
+	    office: "新北市板橋區中山路1段161號c"
+	}, {
+	    cityName: "臺中市",
+	    title: "市長",
+	    name: "林佳龍",
+	    office: "臺中市西屯區臺灣大道3段99號"
+	}, {
+	    cityName: "臺南市",
+	    title: "市長",
+	    name: "賴清德",
+	    office: "臺南市安平區永華路2段6號"
+	}, {
+	    cityName: "桃園市",
+	    title: "市長",
+	    name: "鄭文燦",
+	    office: "桃園市桃園區光興里縣府路1號"
+	}];
+
+	var HW0108 = function (_React$Component) {
+	    _inherits(HW0108, _React$Component);
+
+	    function HW0108() {
+	        _classCallCheck(this, HW0108);
+
+	        return _possibleConstructorReturn(this, (HW0108.__proto__ || Object.getPrototypeOf(HW0108)).apply(this, arguments));
+	    }
+
+	    _createClass(HW0108, [{
+	        key: "componentDidMount",
+	        value: function componentDidMount() {
+	            new _wowjs2.default.WOW().init();
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "hwArea bounceInUp" },
+	                _react2.default.createElement(
+	                    "header",
+	                    null,
+	                    _react2.default.createElement(
+	                        "h1",
+	                        null,
+	                        "This is HW0108"
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: "/" },
+	                        "\u56DE\u5230\u9996\u9801"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "hw1" },
+	                    _react2.default.createElement(
+	                        "pre",
+	                        null,
+	                        "\u95DC \u95DC \u96CE \u9CE9",
+	                        _react2.default.createElement("br", null),
+	                        "\u5728 \u6CB3 \u4E4B \u6D32",
+	                        _react2.default.createElement("br", null),
+	                        "\u7A88 \u7A95 \u6DD1 \u5973",
+	                        _react2.default.createElement("br", null),
+	                        "\u541B \u5B50 \u597D \u9011",
+	                        _react2.default.createElement("br", null)
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "\u8A69.\u5468\u5357.\u95DC\u96CE"
+	                    )
+	                ),
+	                _react2.default.createElement("hr", null),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "hw2" },
+	                    _react2.default.createElement(
+	                        "table",
+	                        { className: "table table-hover" },
+	                        _react2.default.createElement(
+	                            "thead",
+	                            null,
+	                            _react2.default.createElement(
+	                                "tr",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "th",
+	                                    null,
+	                                    "\u76F4\u8F44\u5E02"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "th",
+	                                    null,
+	                                    "\u8077\u7A31"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "th",
+	                                    null,
+	                                    "\u59D3\u540D"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "th",
+	                                    null,
+	                                    "\u8FA6\u516C\u5730\u5740"
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "tbody",
+	                            null,
+	                            tableList.map(function (item, index) {
+	                                return _react2.default.createElement(
+	                                    "tr",
+	                                    { key: index },
+	                                    _react2.default.createElement(
+	                                        "td",
+	                                        null,
+	                                        item.cityName
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "td",
+	                                        null,
+	                                        item.title
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "td",
+	                                        null,
+	                                        item.name
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "td",
+	                                        null,
+	                                        item.office
+	                                    )
+	                                );
+	                            })
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement("hr", null),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "hw3" },
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "http://www.google.com/doodles/evidence-of-water-found-on-mars", target: "_blank" },
+	                        _react2.default.createElement("img", {
+	                            src: "http://www.google.com/logos/doodles/2015/evidence-of-water-found-on-mars-5652760466817024.2-hp2x.gif"
+	                        })
+	                    )
+	                ),
+	                _react2.default.createElement("hr", null),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "hw4" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { id: "p" },
+	                        "\u771F\u6B63\u7684\u6771\u897F\u4E0D\u662F\u7528\u773C\u775B\u53EF\u4EE5\u770B\u5F97\u5230\u7684",
+	                        _react2.default.createElement("br", null),
+	                        "\u9593\u8DDD\u6E2C\u8A66"
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return HW0108;
+	}(_react2.default.Component);
+
+	var _default = HW0108;
+	exports.default = _default;
+	;
+
+	var _temp = function () {
+	    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	        return;
+	    }
+
+	    __REACT_HOT_LOADER__.register(tableList, "tableList", "/Users/vikamirror/Documents/D3JS.js/src/components/hw/HW0108.js");
+
+	    __REACT_HOT_LOADER__.register(HW0108, "HW0108", "/Users/vikamirror/Documents/D3JS.js/src/components/hw/HW0108.js");
+
+	    __REACT_HOT_LOADER__.register(_default, "default", "/Users/vikamirror/Documents/D3JS.js/src/components/hw/HW0108.js");
+	}();
+
+	;
+
+/***/ },
+/* 796 */
+/***/ function(module, exports) {
+
+	(function() {
+	  var MutationObserver, Util, WeakMap, getComputedStyle, getComputedStyleRX,
+	    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+	    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+	  Util = (function() {
+	    function Util() {}
+
+	    Util.prototype.extend = function(custom, defaults) {
+	      var key, value;
+	      for (key in defaults) {
+	        value = defaults[key];
+	        if (custom[key] == null) {
+	          custom[key] = value;
+	        }
+	      }
+	      return custom;
+	    };
+
+	    Util.prototype.isMobile = function(agent) {
+	      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+	    };
+
+	    Util.prototype.createEvent = function(event, bubble, cancel, detail) {
+	      var customEvent;
+	      if (bubble == null) {
+	        bubble = false;
+	      }
+	      if (cancel == null) {
+	        cancel = false;
+	      }
+	      if (detail == null) {
+	        detail = null;
+	      }
+	      if (document.createEvent != null) {
+	        customEvent = document.createEvent('CustomEvent');
+	        customEvent.initCustomEvent(event, bubble, cancel, detail);
+	      } else if (document.createEventObject != null) {
+	        customEvent = document.createEventObject();
+	        customEvent.eventType = event;
+	      } else {
+	        customEvent.eventName = event;
+	      }
+	      return customEvent;
+	    };
+
+	    Util.prototype.emitEvent = function(elem, event) {
+	      if (elem.dispatchEvent != null) {
+	        return elem.dispatchEvent(event);
+	      } else if (event in (elem != null)) {
+	        return elem[event]();
+	      } else if (("on" + event) in (elem != null)) {
+	        return elem["on" + event]();
+	      }
+	    };
+
+	    Util.prototype.addEvent = function(elem, event, fn) {
+	      if (elem.addEventListener != null) {
+	        return elem.addEventListener(event, fn, false);
+	      } else if (elem.attachEvent != null) {
+	        return elem.attachEvent("on" + event, fn);
+	      } else {
+	        return elem[event] = fn;
+	      }
+	    };
+
+	    Util.prototype.removeEvent = function(elem, event, fn) {
+	      if (elem.removeEventListener != null) {
+	        return elem.removeEventListener(event, fn, false);
+	      } else if (elem.detachEvent != null) {
+	        return elem.detachEvent("on" + event, fn);
+	      } else {
+	        return delete elem[event];
+	      }
+	    };
+
+	    Util.prototype.innerHeight = function() {
+	      if ('innerHeight' in window) {
+	        return window.innerHeight;
+	      } else {
+	        return document.documentElement.clientHeight;
+	      }
+	    };
+
+	    return Util;
+
+	  })();
+
+	  WeakMap = this.WeakMap || this.MozWeakMap || (WeakMap = (function() {
+	    function WeakMap() {
+	      this.keys = [];
+	      this.values = [];
+	    }
+
+	    WeakMap.prototype.get = function(key) {
+	      var i, item, j, len, ref;
+	      ref = this.keys;
+	      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+	        item = ref[i];
+	        if (item === key) {
+	          return this.values[i];
+	        }
+	      }
+	    };
+
+	    WeakMap.prototype.set = function(key, value) {
+	      var i, item, j, len, ref;
+	      ref = this.keys;
+	      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+	        item = ref[i];
+	        if (item === key) {
+	          this.values[i] = value;
+	          return;
+	        }
+	      }
+	      this.keys.push(key);
+	      return this.values.push(value);
+	    };
+
+	    return WeakMap;
+
+	  })());
+
+	  MutationObserver = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (MutationObserver = (function() {
+	    function MutationObserver() {
+	      if (typeof console !== "undefined" && console !== null) {
+	        console.warn('MutationObserver is not supported by your browser.');
+	      }
+	      if (typeof console !== "undefined" && console !== null) {
+	        console.warn('WOW.js cannot detect dom mutations, please call .sync() after loading new content.');
+	      }
+	    }
+
+	    MutationObserver.notSupported = true;
+
+	    MutationObserver.prototype.observe = function() {};
+
+	    return MutationObserver;
+
+	  })());
+
+	  getComputedStyle = this.getComputedStyle || function(el, pseudo) {
+	    this.getPropertyValue = function(prop) {
+	      var ref;
+	      if (prop === 'float') {
+	        prop = 'styleFloat';
+	      }
+	      if (getComputedStyleRX.test(prop)) {
+	        prop.replace(getComputedStyleRX, function(_, _char) {
+	          return _char.toUpperCase();
+	        });
+	      }
+	      return ((ref = el.currentStyle) != null ? ref[prop] : void 0) || null;
+	    };
+	    return this;
+	  };
+
+	  getComputedStyleRX = /(\-([a-z]){1})/g;
+
+	  this.WOW = (function() {
+	    WOW.prototype.defaults = {
+	      boxClass: 'wow',
+	      animateClass: 'animated',
+	      offset: 0,
+	      mobile: true,
+	      live: true,
+	      callback: null,
+	      scrollContainer: null
+	    };
+
+	    function WOW(options) {
+	      if (options == null) {
+	        options = {};
+	      }
+	      this.scrollCallback = bind(this.scrollCallback, this);
+	      this.scrollHandler = bind(this.scrollHandler, this);
+	      this.resetAnimation = bind(this.resetAnimation, this);
+	      this.start = bind(this.start, this);
+	      this.scrolled = true;
+	      this.config = this.util().extend(options, this.defaults);
+	      if (options.scrollContainer != null) {
+	        this.config.scrollContainer = document.querySelector(options.scrollContainer);
+	      }
+	      this.animationNameCache = new WeakMap();
+	      this.wowEvent = this.util().createEvent(this.config.boxClass);
+	    }
+
+	    WOW.prototype.init = function() {
+	      var ref;
+	      this.element = window.document.documentElement;
+	      if ((ref = document.readyState) === "interactive" || ref === "complete") {
+	        this.start();
+	      } else {
+	        this.util().addEvent(document, 'DOMContentLoaded', this.start);
+	      }
+	      return this.finished = [];
+	    };
+
+	    WOW.prototype.start = function() {
+	      var box, j, len, ref;
+	      this.stopped = false;
+	      this.boxes = (function() {
+	        var j, len, ref, results;
+	        ref = this.element.querySelectorAll("." + this.config.boxClass);
+	        results = [];
+	        for (j = 0, len = ref.length; j < len; j++) {
+	          box = ref[j];
+	          results.push(box);
+	        }
+	        return results;
+	      }).call(this);
+	      this.all = (function() {
+	        var j, len, ref, results;
+	        ref = this.boxes;
+	        results = [];
+	        for (j = 0, len = ref.length; j < len; j++) {
+	          box = ref[j];
+	          results.push(box);
+	        }
+	        return results;
+	      }).call(this);
+	      if (this.boxes.length) {
+	        if (this.disabled()) {
+	          this.resetStyle();
+	        } else {
+	          ref = this.boxes;
+	          for (j = 0, len = ref.length; j < len; j++) {
+	            box = ref[j];
+	            this.applyStyle(box, true);
+	          }
+	        }
+	      }
+	      if (!this.disabled()) {
+	        this.util().addEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
+	        this.util().addEvent(window, 'resize', this.scrollHandler);
+	        this.interval = setInterval(this.scrollCallback, 50);
+	      }
+	      if (this.config.live) {
+	        return new MutationObserver((function(_this) {
+	          return function(records) {
+	            var k, len1, node, record, results;
+	            results = [];
+	            for (k = 0, len1 = records.length; k < len1; k++) {
+	              record = records[k];
+	              results.push((function() {
+	                var l, len2, ref1, results1;
+	                ref1 = record.addedNodes || [];
+	                results1 = [];
+	                for (l = 0, len2 = ref1.length; l < len2; l++) {
+	                  node = ref1[l];
+	                  results1.push(this.doSync(node));
+	                }
+	                return results1;
+	              }).call(_this));
+	            }
+	            return results;
+	          };
+	        })(this)).observe(document.body, {
+	          childList: true,
+	          subtree: true
+	        });
+	      }
+	    };
+
+	    WOW.prototype.stop = function() {
+	      this.stopped = true;
+	      this.util().removeEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
+	      this.util().removeEvent(window, 'resize', this.scrollHandler);
+	      if (this.interval != null) {
+	        return clearInterval(this.interval);
+	      }
+	    };
+
+	    WOW.prototype.sync = function(element) {
+	      if (MutationObserver.notSupported) {
+	        return this.doSync(this.element);
+	      }
+	    };
+
+	    WOW.prototype.doSync = function(element) {
+	      var box, j, len, ref, results;
+	      if (element == null) {
+	        element = this.element;
+	      }
+	      if (element.nodeType !== 1) {
+	        return;
+	      }
+	      element = element.parentNode || element;
+	      ref = element.querySelectorAll("." + this.config.boxClass);
+	      results = [];
+	      for (j = 0, len = ref.length; j < len; j++) {
+	        box = ref[j];
+	        if (indexOf.call(this.all, box) < 0) {
+	          this.boxes.push(box);
+	          this.all.push(box);
+	          if (this.stopped || this.disabled()) {
+	            this.resetStyle();
+	          } else {
+	            this.applyStyle(box, true);
+	          }
+	          results.push(this.scrolled = true);
+	        } else {
+	          results.push(void 0);
+	        }
+	      }
+	      return results;
+	    };
+
+	    WOW.prototype.show = function(box) {
+	      this.applyStyle(box);
+	      box.className = box.className + " " + this.config.animateClass;
+	      if (this.config.callback != null) {
+	        this.config.callback(box);
+	      }
+	      this.util().emitEvent(box, this.wowEvent);
+	      this.util().addEvent(box, 'animationend', this.resetAnimation);
+	      this.util().addEvent(box, 'oanimationend', this.resetAnimation);
+	      this.util().addEvent(box, 'webkitAnimationEnd', this.resetAnimation);
+	      this.util().addEvent(box, 'MSAnimationEnd', this.resetAnimation);
+	      return box;
+	    };
+
+	    WOW.prototype.applyStyle = function(box, hidden) {
+	      var delay, duration, iteration;
+	      duration = box.getAttribute('data-wow-duration');
+	      delay = box.getAttribute('data-wow-delay');
+	      iteration = box.getAttribute('data-wow-iteration');
+	      return this.animate((function(_this) {
+	        return function() {
+	          return _this.customStyle(box, hidden, duration, delay, iteration);
+	        };
+	      })(this));
+	    };
+
+	    WOW.prototype.animate = (function() {
+	      if ('requestAnimationFrame' in window) {
+	        return function(callback) {
+	          return window.requestAnimationFrame(callback);
+	        };
+	      } else {
+	        return function(callback) {
+	          return callback();
+	        };
+	      }
+	    })();
+
+	    WOW.prototype.resetStyle = function() {
+	      var box, j, len, ref, results;
+	      ref = this.boxes;
+	      results = [];
+	      for (j = 0, len = ref.length; j < len; j++) {
+	        box = ref[j];
+	        results.push(box.style.visibility = 'visible');
+	      }
+	      return results;
+	    };
+
+	    WOW.prototype.resetAnimation = function(event) {
+	      var target;
+	      if (event.type.toLowerCase().indexOf('animationend') >= 0) {
+	        target = event.target || event.srcElement;
+	        return target.className = target.className.replace(this.config.animateClass, '').trim();
+	      }
+	    };
+
+	    WOW.prototype.customStyle = function(box, hidden, duration, delay, iteration) {
+	      if (hidden) {
+	        this.cacheAnimationName(box);
+	      }
+	      box.style.visibility = hidden ? 'hidden' : 'visible';
+	      if (duration) {
+	        this.vendorSet(box.style, {
+	          animationDuration: duration
+	        });
+	      }
+	      if (delay) {
+	        this.vendorSet(box.style, {
+	          animationDelay: delay
+	        });
+	      }
+	      if (iteration) {
+	        this.vendorSet(box.style, {
+	          animationIterationCount: iteration
+	        });
+	      }
+	      this.vendorSet(box.style, {
+	        animationName: hidden ? 'none' : this.cachedAnimationName(box)
+	      });
+	      return box;
+	    };
+
+	    WOW.prototype.vendors = ["moz", "webkit"];
+
+	    WOW.prototype.vendorSet = function(elem, properties) {
+	      var name, results, value, vendor;
+	      results = [];
+	      for (name in properties) {
+	        value = properties[name];
+	        elem["" + name] = value;
+	        results.push((function() {
+	          var j, len, ref, results1;
+	          ref = this.vendors;
+	          results1 = [];
+	          for (j = 0, len = ref.length; j < len; j++) {
+	            vendor = ref[j];
+	            results1.push(elem["" + vendor + (name.charAt(0).toUpperCase()) + (name.substr(1))] = value);
+	          }
+	          return results1;
+	        }).call(this));
+	      }
+	      return results;
+	    };
+
+	    WOW.prototype.vendorCSS = function(elem, property) {
+	      var j, len, ref, result, style, vendor;
+	      style = getComputedStyle(elem);
+	      result = style.getPropertyCSSValue(property);
+	      ref = this.vendors;
+	      for (j = 0, len = ref.length; j < len; j++) {
+	        vendor = ref[j];
+	        result = result || style.getPropertyCSSValue("-" + vendor + "-" + property);
+	      }
+	      return result;
+	    };
+
+	    WOW.prototype.animationName = function(box) {
+	      var animationName, error;
+	      try {
+	        animationName = this.vendorCSS(box, 'animation-name').cssText;
+	      } catch (error) {
+	        animationName = getComputedStyle(box).getPropertyValue('animation-name');
+	      }
+	      if (animationName === 'none') {
+	        return '';
+	      } else {
+	        return animationName;
+	      }
+	    };
+
+	    WOW.prototype.cacheAnimationName = function(box) {
+	      return this.animationNameCache.set(box, this.animationName(box));
+	    };
+
+	    WOW.prototype.cachedAnimationName = function(box) {
+	      return this.animationNameCache.get(box);
+	    };
+
+	    WOW.prototype.scrollHandler = function() {
+	      return this.scrolled = true;
+	    };
+
+	    WOW.prototype.scrollCallback = function() {
+	      var box;
+	      if (this.scrolled) {
+	        this.scrolled = false;
+	        this.boxes = (function() {
+	          var j, len, ref, results;
+	          ref = this.boxes;
+	          results = [];
+	          for (j = 0, len = ref.length; j < len; j++) {
+	            box = ref[j];
+	            if (!(box)) {
+	              continue;
+	            }
+	            if (this.isVisible(box)) {
+	              this.show(box);
+	              continue;
+	            }
+	            results.push(box);
+	          }
+	          return results;
+	        }).call(this);
+	        if (!(this.boxes.length || this.config.live)) {
+	          return this.stop();
+	        }
+	      }
+	    };
+
+	    WOW.prototype.offsetTop = function(element) {
+	      var top;
+	      while (element.offsetTop === void 0) {
+	        element = element.parentNode;
+	      }
+	      top = element.offsetTop;
+	      while (element = element.offsetParent) {
+	        top += element.offsetTop;
+	      }
+	      return top;
+	    };
+
+	    WOW.prototype.isVisible = function(box) {
+	      var bottom, offset, top, viewBottom, viewTop;
+	      offset = box.getAttribute('data-wow-offset') || this.config.offset;
+	      viewTop = (this.config.scrollContainer && this.config.scrollContainer.scrollTop) || window.pageYOffset;
+	      viewBottom = viewTop + Math.min(this.element.clientHeight, this.util().innerHeight()) - offset;
+	      top = this.offsetTop(box);
+	      bottom = top + box.clientHeight;
+	      return top <= viewBottom && bottom >= viewTop;
+	    };
+
+	    WOW.prototype.util = function() {
+	      return this._util != null ? this._util : this._util = new Util();
+	    };
+
+	    WOW.prototype.disabled = function() {
+	      return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+	    };
+
+	    return WOW;
+
+	  })();
+
+	}).call(this);
+
+
+/***/ },
+/* 797 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);
