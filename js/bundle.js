@@ -49560,9 +49560,10 @@
 	    }, history: _store.history },
 	  _react2.default.createElement(
 	    _reactRouter.Route,
-	    { path: "/", component: _App2.default },
+	    { path: "*", component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: "*", component: _Homework2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: "Homework1", component: _Homework2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "*", component: NotFound })
 	  )
 	);
 
