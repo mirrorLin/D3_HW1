@@ -49546,7 +49546,11 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Homework = __webpack_require__(794);
+	var _NotFound = __webpack_require__(794);
+
+	var _NotFound2 = _interopRequireDefault(_NotFound);
+
+	var _Homework = __webpack_require__(795);
 
 	var _Homework2 = _interopRequireDefault(_Homework);
 
@@ -49563,14 +49567,11 @@
 	    { path: "/", component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "Homework1", component: _Homework2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: "*", component: NotFound })
+	    _react2.default.createElement(_reactRouter.Route, { path: "*", component: _NotFound2.default })
 	  )
 	);
 
 	// export
-
-	//import NotFound from "./components/NotFound";
-
 	exports.router = router;
 	;
 
@@ -66232,6 +66233,76 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(299);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// Not found page component
+	var NotFound = function (_React$Component) {
+	  _inherits(NotFound, _React$Component);
+
+	  function NotFound() {
+	    _classCallCheck(this, NotFound);
+
+	    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));
+	  }
+
+	  _createClass(NotFound, [{
+	    key: "render",
+
+	    // render
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "page-not-found" },
+	        _react2.default.createElement(
+	          "h4",
+	          null,
+	          "\u627E\u4E0D\u5230\u5566\u5566\u5566!!!!?????"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return NotFound;
+	}(_react2.default.Component);
+
+	var _default = NotFound;
+	exports.default = _default;
+	;
+
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+
+	  __REACT_HOT_LOADER__.register(NotFound, "NotFound", "/Users/vikamirror/Documents/D3JS.js/src/components/NotFound.js");
+
+	  __REACT_HOT_LOADER__.register(_default, "default", "/Users/vikamirror/Documents/D3JS.js/src/components/NotFound.js");
+	}();
+
+	;
+
+/***/ },
+/* 795 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 
@@ -66243,11 +66314,11 @@
 
 	var _reactRouter = __webpack_require__(506);
 
-	var _wowjs = __webpack_require__(795);
+	var _wowjs = __webpack_require__(796);
 
 	var _wowjs2 = _interopRequireDefault(_wowjs);
 
-	__webpack_require__(796);
+	__webpack_require__(797);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -66461,7 +66532,7 @@
 	;
 
 /***/ },
-/* 795 */
+/* 796 */
 /***/ function(module, exports) {
 
 	(function() {
@@ -66980,7 +67051,7 @@
 
 
 /***/ },
-/* 796 */
+/* 797 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
