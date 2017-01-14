@@ -66270,7 +66270,7 @@
 	        _react2.default.createElement(
 	          "h4",
 	          null,
-	          "Page not found"
+	          "\u627E\u4E0D\u5230\u5566\u5566\u5566"
 	        )
 	      );
 	    }
