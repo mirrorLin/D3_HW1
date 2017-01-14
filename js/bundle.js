@@ -49550,9 +49550,9 @@
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
-	var _HW = __webpack_require__(795);
+	var _Homework = __webpack_require__(795);
 
-	var _HW2 = _interopRequireDefault(_HW);
+	var _Homework2 = _interopRequireDefault(_Homework);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -49566,7 +49566,7 @@
 	    _reactRouter.Route,
 	    { path: "/", component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: "HW0108", component: _HW2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "Homework1", component: _Homework2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "*", component: _NotFound2.default })
 	  )
 	);
@@ -66360,16 +66360,16 @@
 	    office: "桃園市桃園區光興里縣府路1號"
 	}];
 
-	var HW0108 = function (_React$Component) {
-	    _inherits(HW0108, _React$Component);
+	var Homework1 = function (_React$Component) {
+	    _inherits(Homework1, _React$Component);
 
-	    function HW0108() {
-	        _classCallCheck(this, HW0108);
+	    function Homework1() {
+	        _classCallCheck(this, Homework1);
 
-	        return _possibleConstructorReturn(this, (HW0108.__proto__ || Object.getPrototypeOf(HW0108)).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (Homework1.__proto__ || Object.getPrototypeOf(Homework1)).apply(this, arguments));
 	    }
 
-	    _createClass(HW0108, [{
+	    _createClass(Homework1, [{
 	        key: "componentDidMount",
 	        value: function componentDidMount() {
 	            new _wowjs2.default.WOW().init();
@@ -66510,10 +66510,10 @@
 	        }
 	    }]);
 
-	    return HW0108;
+	    return Homework1;
 	}(_react2.default.Component);
 
-	var _default = HW0108;
+	var _default = Homework1;
 	exports.default = _default;
 	;
 
@@ -66522,11 +66522,11 @@
 	        return;
 	    }
 
-	    __REACT_HOT_LOADER__.register(tableList, "tableList", "/Users/vikamirror/Documents/D3JS.js/src/components/hw/HW0108.js");
+	    __REACT_HOT_LOADER__.register(tableList, "tableList", "/Users/vikamirror/Documents/D3JS.js/src/components/hw/Homework1.js");
 
-	    __REACT_HOT_LOADER__.register(HW0108, "HW0108", "/Users/vikamirror/Documents/D3JS.js/src/components/hw/HW0108.js");
+	    __REACT_HOT_LOADER__.register(Homework1, "Homework1", "/Users/vikamirror/Documents/D3JS.js/src/components/hw/Homework1.js");
 
-	    __REACT_HOT_LOADER__.register(_default, "default", "/Users/vikamirror/Documents/D3JS.js/src/components/hw/HW0108.js");
+	    __REACT_HOT_LOADER__.register(_default, "default", "/Users/vikamirror/Documents/D3JS.js/src/components/hw/Homework1.js");
 	}();
 
 	;
